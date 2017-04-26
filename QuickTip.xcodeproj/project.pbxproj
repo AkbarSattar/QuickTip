@@ -12,6 +12,7 @@
 		BF84C80B1E97EB73004BC844 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF84C8091E97EB73004BC844 /* Main.storyboard */; };
 		BF84C80D1E97EB73004BC844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF84C80C1E97EB73004BC844 /* Assets.xcassets */; };
 		BF84C8101E97EB73004BC844 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF84C80E1E97EB73004BC844 /* LaunchScreen.storyboard */; };
+		BF84C8181E97F1A9004BC844 /* CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF84C8171E97F1A9004BC844 /* CalcViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BF84C80C1E97EB73004BC844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF84C80F1E97EB73004BC844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF84C8111E97EB73004BC844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF84C8171E97F1A9004BC844 /* CalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				BF84C8051E97EB73004BC844 /* AppDelegate.swift */,
 				BF84C8071E97EB73004BC844 /* ViewController.swift */,
+				BF84C8171E97F1A9004BC844 /* CalcViewController.swift */,
 				BF84C8091E97EB73004BC844 /* Main.storyboard */,
 				BF84C80C1E97EB73004BC844 /* Assets.xcassets */,
 				BF84C80E1E97EB73004BC844 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF84C8081E97EB73004BC844 /* ViewController.swift in Sources */,
+				BF84C8181E97F1A9004BC844 /* CalcViewController.swift in Sources */,
 				BF84C8061E97EB73004BC844 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +303,7 @@
 				BF84C8161E97EB73004BC844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
