@@ -47,17 +47,26 @@ class ViewController: UIViewController {
         super.viewDidLoad()
       
     // Set the Keyboard type to numberpad, restricting inputs to numbers only
-        amountTextField.keyboardType = .numberPad
+        amountTextField.keyboardType = .decimalPad
         
         func textField(_ amountTextField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-            let invalidCharacters = CharacterSet(charactersIn: "0123456789").inverted
+            let invalidCharacters = CharacterSet(charactersIn: "0123456789.").inverted
             return string.rangeOfCharacter(from: invalidCharacters, options: [], range: string.startIndex ..< string.endIndex) == nil
+        
+        
         }
 
     }
 
+    
+    
 // SUBMIT BUTTON
     @IBAction func generateTip(_ sender: Any) {
+        
+    
+    // Dismiss number pad
+        amountTextField.endEditing(true);
+
       
     // Check to see if text field is empty
         if ((amountTextField.text?.isEmpty)!){
@@ -73,7 +82,7 @@ class ViewController: UIViewController {
             
     // Calculate tip and set text
             let amount: Double = Double(amountTextField.text!)!
-                tipPercent5.text = "Tip: " + String(format: "%.2f", amount*0.50)
+                tipPercent5.text = "Tip: " + String(format: "%.2f", amount*0.05)
                 tipPercent10.text = "Tip: " + String(format: "%.2f",amount*0.10)
                 tipPercent15.text = "Tip: " + String(format: "%.2f",amount*0.15)
                 tipPercent20.text = "Tip: " + String(format: "%.2f",amount*0.20)
@@ -106,6 +115,9 @@ class ViewController: UIViewController {
   // CLEAR BUTTON
     @IBAction func clearButton(_ sender: UIButton) {
    
+    // Dismiss number pad
+        amountTextField.endEditing(true);
+        
     //Reset input field
         amountTextField.text = ""
     
@@ -134,11 +146,13 @@ class ViewController: UIViewController {
     }
     
     
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+ 
     
     
 
